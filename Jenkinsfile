@@ -18,7 +18,7 @@ node {
     stage('Docker login to hub and push the image') {
 
         // This step should not normally be used in your script. Consult the inline help for details.
-        withDockerRegistry(toolName: 'Docker', url: 'docker.io') {
+          withDockerRegistry(credentialsId: 'b5588a7a-3945-46a6-b072-9832a91596e6' ,toolName: 'Docker', url: 'docker.io/kagwima') {
             // some block
             app.push("latest")
         }
