@@ -12,7 +12,7 @@ node {
     }
      stage('Build docker image') {
 
-     app= docker.build("DOCKER_TEST:0.1")
+     app= docker.build("docker-test:0.1")
        
     }
     stage('Docker login to hub and push the image') {
