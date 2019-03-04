@@ -12,15 +12,17 @@ node {
     }
      stage('Build docker image') {
 
-        sh "docker build -t DOCKER_TEST:0.1 ."	
+     app= docker.build("DOCKER_TEST:0.1")
        
     }
     stage('Docker login to hub and push the image') {
 
-        sh "docker login  -u "kagwima" -p "K@d506112007" "	
-        sh "docker tag DOCKER_TEST:0.1 kagwima/docker_test:latest"
-        sh "docker push kagwima/docker_test:latest"
-       
+        // This step should not normally be used in your script. Consult the inline help for details.
+        withDockerRegistry(toolName: 'Docker', url: 'docker.io') {
+            // some block
+        }
+    app.push("latest")
+}
     }
     
       stage('Apply changes to the environment') {
