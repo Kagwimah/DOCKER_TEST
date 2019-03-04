@@ -1,0 +1,148 @@
+
+body{
+  margin: 0;
+  width: 100%;
+  color: white;
+  
+}
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: #00ad50 ;
+  position:center;
+  top: 0;
+  overflow: auto;
+  
+}
+
+.header ul li a{
+  display: block;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 0px;
+  color: white;
+  margin: 10px 10px;
+
+}
+.header ul li a:hover{
+  background-color: red;
+}
+#right_header{
+  right: 1%;
+  }
+#left_header{
+  left: 1%;
+ }
+ul{
+  list-style: none;
+  position: absolute;
+  margin: 0;
+  padding-left:4px;
+   
+}
+li {
+  float: left;
+  }
+.menu{
+  background-color: white;
+  margin: 0 0;
+}
+#sfc_logo{
+  width: 55px;
+  background-image:  url("https://www.safaricom.co.ke/safaricommain/images/icons/safaricom_logo.png?Lo0P=a2daa97db3645857c75be47546cf55f0"); 
+  background-repeat: no-repeat;
+  padding: 5%;  
+  position:absolute;
+
+
+}
+
+
+
+.main{
+  background-image:  url("https://www.safaricom.co.ke/Corporate-Image-homepage.jpg?Lo0P=713f351b2b478f0fe420a77c439f3973"); 
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  margin-top: 50px;
+  box-shadow: 0px 5px 5px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.main::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  background-color: aqua;
+}
+
+#description{
+  font-size: 24px;
+  font-family: Sans-Serif;
+}
+#contents{
+  border: #00ad50 2px;
+  background-color: bisque;
+  
+  width: 200px;
+  height: 120px;
+}
+
+
+
+
+
+.footer{
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box ;
+  background-color: #333333 ;
+  position: relative;
+  bottom: 0;
+ 
+  font-family: sans-serif;
+  font-size: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  
+}
+
+.footer ul li a{
+  display: table-column;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 0px;
+  color: white;
+  margin: 10px 10px;
+
+}
+.footer ul li a:hover{
+  background-color: red;
+}
+
+.column {
+ flex-grow: 1;
+ align-self: auto;
+}
+
+.page_footer{
+  width: 100%;
+  height: 300px;
+  background-color: #333333 ;
+  display: flex;
+  flex-direction: row row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
