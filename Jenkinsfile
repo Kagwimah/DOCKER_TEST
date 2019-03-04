@@ -19,13 +19,11 @@ node {
 
         // This step should not normally be used in your script. Consult the inline help for details.
         withDockerRegistry(toolName: 'Docker', url: 'docker.io') {
-            
-              app.push("latest")
             // some block
+            app.push("latest")
         }
-  
+    
 }
-    }
     
       stage('Apply changes to the environment') {
 
